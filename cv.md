@@ -1,6 +1,6 @@
 # **Pavel Karman**
-## Junior Frontend Developer 
-# Contact information 
+### Junior Frontend Developer 
+## Contact information 
  **Phone:** +375336095867
  **E-mail:** PavelKarman.Pavlkan@gmail.com
  **Telegram:** @Pavlkan
@@ -11,7 +11,7 @@
 * CSS
 * JavaScript (basics)
 * Git
-**Code Example**
+## **Code Example**
 ```javascript  
 var maxRedigit = function(num) {
   if (num < 100 || num > 999) {
