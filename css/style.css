@@ -1,0 +1,104 @@
+* {
+    max-width: 1440px;
+    margin: 0;
+}
+
+html {
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    
+    color: #000000;
+    background-color: #F5FFFA;
+    box-shadow: 2px 0 500px#d8d8d8;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+}
+
+.left-container {
+    background: #F0FFF0;
+    box-shadow: 2px 0 50px#d8d8d8;
+}
+
+.contact-info__content {
+    padding: 40px;
+}
+
+.right-container {
+    padding: 0 110px 0 40px;
+}
+
+.section-title__text {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: start;
+}
+
+.section-title__underline {
+    margin-bottom: 15px;
+
+    display: block;
+    border-bottom: 2px solid black;
+    transition: 1s;
+    width: 50px;
+}
+
+/* #title::after,
+.section-title::after {
+    content: "";
+    bottom: 0;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 50px;
+    background: #000000;
+    transition: 1s;
+} */
+
+.section-title:hover:after {
+    width: 320px; 
+    transition: 1s;
+}
+
+.contact-info__list-container:hover ~ .contact-info__title{
+    color: aqua;
+    width: 320px; 
+    transition: 1s;
+}
+
+.contact-info__list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list__element {
+    margin-bottom: 20px;
+}
+
+.right-section {
+    margin-bottom: 50px;
+}
+
+.biography {
+    margin-bottom: 70px;
+}
+
+.about-myself__title {
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.biography__text {
+    margin-bottom: 15px;
+}
