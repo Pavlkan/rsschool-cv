@@ -34,6 +34,15 @@ main {
     padding: 40px;
 }
 
+.contact-info__list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list__element {
+    margin-bottom: 20px;
+}
+
 .right-container {
     padding: 0 110px 0 40px;
 }
@@ -54,36 +63,9 @@ main {
     width: 50px;
 }
 
-/* #title::after,
-.section-title::after {
-    content: "";
-    bottom: 0;
-    display: block;
-    background: none repeat scroll 0 0 transparent;
-    height: 2px;
-    width: 50px;
-    background: #000000;
-    transition: 1s;
-} */
-
 .section-title:hover:after {
     width: 320px; 
     transition: 1s;
-}
-
-.contact-info__list-container:hover ~ .contact-info__title{
-    color: aqua;
-    width: 320px; 
-    transition: 1s;
-}
-
-.contact-info__list {
-    padding: 0;
-    list-style-type: none;
-}
-
-.list__element {
-    margin-bottom: 20px;
 }
 
 .right-section {
@@ -102,3 +84,18 @@ main {
 .biography__text {
     margin-bottom: 15px;
 }
+
+.right-container__list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills__element::before,
+.education__element::before {
+    margin-right: 10px;
+
+    content: '\2014';
+    font-size: 20px;
+    font-weight: bold;
+}
+
