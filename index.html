@@ -16,13 +16,27 @@
 
 <body>
 
+    <header>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li><a class="navigation__link" href="#contacts">Contact information</a></li>
+                <li><a class="navigation__link" href="#biography">Briefly About Myself</a></li>
+                <li><a class="navigation__link" href="#skills">Skills</a></li>
+                <li><a class="navigation__link" href="#code-example">Code Example</a></li>
+                <li><a class="navigation__link" href="#education">Education</a></li>
+                <li><a class="navigation__link" href="">Progects</a></li>
+                <li><a class="navigation__link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         
         <div class="left-container" id="contact-info" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
             <section class="contact-info">
                 <img src="./img/Pavel-Karman.jpg" alt="Pavel Karman" width="450">
         
-                <div class="contact-info__content">
+                <div class="contact-info__content"  id="contacts">
                     <div class="contact-info__title section-title">
                         <h2 class="section-title__text" >Contact information</h2>
                         <div class="section-title__underline" id="contact-info_underline-stretched"></div>
@@ -83,7 +97,7 @@
               } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> {
                 <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> str = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">String</span>(num);
                 <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> maxNumber = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.max(str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>]);
-                <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> minNumber = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.min(str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>]);
+                <span class="hljs-keyword" style="color: #93c763; font-weight: 700;">let</span> minNumber = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.min(str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>]);
                 <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] &lt; maxNumber &amp;&amp; str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] &gt; minNumber) {
                   <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> +(maxNumber + str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] + minNumber);
                 } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>] &lt; maxNumber &amp;&amp; str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>] &gt; minNumber) {
