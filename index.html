@@ -19,13 +19,13 @@
     <header>
         <nav class="navigation">
             <ul class="navigation__list list">
-                <li><a class="navigation__link" href="#contacts">Contact information</a></li>
-                <li><a class="navigation__link" href="#biography">Briefly About Myself</a></li>
-                <li><a class="navigation__link" href="#skills">Skills</a></li>
-                <li><a class="navigation__link" href="#code-example">Code Example</a></li>
-                <li><a class="navigation__link" href="#education">Education</a></li>
-                <li><a class="navigation__link" href="#progects">Progects</a></li>
-                <li><a class="navigation__link" href="#languages">Languages</a></li>
+                <li><a class="navigation__link link" href="#contacts">Contact information</a></li>
+                <li><a class="navigation__link link" href="#biography">Briefly About Myself</a></li>
+                <li><a class="navigation__link link" href="#skills">Skills</a></li>
+                <li><a class="navigation__link link" href="#code-example">Code Example</a></li>
+                <li><a class="navigation__link link" href="#education">Education</a></li>
+                <li><a class="navigation__link link" href="#progects">Progects</a></li>
+                <li><a class="navigation__link link" href="#languages">Languages</a></li>
             </ul>
         </nav>
     </header>
@@ -146,13 +146,26 @@
             </section>
 
             <section class="progects right-section" id="progects" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+
                 <div class="progects__title section-title">
                     <h2 class="section-title__text">Progects</h2>
                     <div class="section-title__underline" id="progects_underline-stretched"></div>
                 </div>
-                <div class="progects__list-container">
-                    
+
+                <div class="progects__first-progect-container progect-container">
+                    <p class="progects__read-more" id="progects__read-more">Progect one</p>
+                    <div class="progects__content">
+                        <a class="progects__link link" href="https://pavlkan.github.io/museum/index.html">Museum</a>
+                    </div>
                 </div>
+
+                <div class="progects__first-progect-container progect-container">
+                    <p class="progects__read-more">Progect two</p>
+                    <div class="progects__content">
+                        <img src="./img/progect.png" alt="second-progect" width="800">
+                    </div>
+                </div>
+
             </section>
     
             <section class="languages right-section" id="languages" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
@@ -178,7 +191,5 @@
     <script src="./js/script.js"></script>
 
 </body>
-
-
 
 </html>
