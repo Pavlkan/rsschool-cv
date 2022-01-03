@@ -21,7 +21,7 @@ body {
 }
 
 .navigation {
-    background: linear-gradient(to right, #F0FFF0, #b3e7b3);
+    background: linear-gradient(to right, #F0FFF0, #b3e7d3);
     box-shadow: 2px 0 50px#d8d8d8;
 }
 
@@ -55,8 +55,7 @@ body {
     color: #0d5a2e;
 }
 
-.navigation__link::before,
-.link::before {
+.navigation__link::before {
     content: "";
     bottom: 0;
     left: 0;
@@ -68,8 +67,7 @@ body {
     transform: scaleX(0);
 }
 
-.navigation__link:hover:before,
-.link:hover:before {
+.navigation__link:hover:before {
     transform: scaleX(1);
 }
 
@@ -166,5 +164,22 @@ main {
 }
 
 .progects__link {
+    text-decoration: underline;
     font-weight: normal;
+}
+
+footer {
+    padding: 40px;
+}
+
+.footer__logo-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid#d8d8d8;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.footer__date-container {
+    text-align: center;
 }
