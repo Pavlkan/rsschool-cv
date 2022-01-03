@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2E8B57">
+    <meta name="theme-color" content="#2E8B57">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Pavlkan CV</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li><a class="navigation__link link" href="#contacts">Contact information</a></li>
+                <li><a class="navigation__link link" href="#biography">Briefly About Myself</a></li>
+                <li><a class="navigation__link link" href="#skills">Skills</a></li>
+                <li><a class="navigation__link link" href="#code-example">Code Example</a></li>
+                <li><a class="navigation__link link" href="#education">Education</a></li>
+                <li><a class="navigation__link link" href="#progects">Progects</a></li>
+                <li><a class="navigation__link link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="left-container" id="contact-info" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+            <section class="contact-info">
+                <img src="./img/Pavel-Karman.jpg" alt="Pavel Karman" width="450">
+        
+                <div class="contact-info__content"  id="contacts">
+                    <div class="contact-info__title section-title">
+                        <h2 class="section-title__text" >Contact information</h2>
+                        <div class="section-title__underline" id="contact-info_underline-stretched"></div>
+                    </div>
+                    
+                    <div class="contact-info__list-container">
+                        <ul class="contact-info__list list">
+                            <li class="list__element"><b>Location:</b> Mogilev, Belarus</li>
+                            <li class="list__element"><b>Phone:</b> +375336095867</li>
+                            <li class="list__element"><b>E-mail:</b> PavelKarman.Pavlkan@gmail.com</li>
+                            <li class="list__element"><b>Telegram:</b> @Pavlkan</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="right-container">
+            <section class="about-myself right-section">
+                <div class="about-myself__content">
+                    <h1 class="about-myself__title">Pavel Karman</h1>
+                    <span class="about-myself__text">Junior frontend developer</span>
+                </div>
+            </section>
+            
+            <section class="biography right-section" id="biography" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+                <div class="biography__title section-title">
+                    <h2 class="section-title__text" >Briefly About Myself</h2>
+                    <div class="section-title__underline" id="biography_underline-stretched"></div>
+                </div>
+                <div class="biography__text">I am 24 years old and have a pharmaceutical education. One of the aspects of working in hospital’s pharmacy is high level of interaction with computers and old software. That’s how I started being interested in programming and seeking the ways to use the skills in my work. As for my personal values, I am a good team worker, I always try to do my best to delve into task, to optimize it and deepen my knowledge. That’s the reason I am here - to gain theoretical base and practical skills in frontend development.</div>
+            </section>
+    
+            <section class="skills right-section" id="skills" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+                <div class="skills__title section-title">
+                    <h2 class="section-title__text" >Skills</h2>
+                    <div class="section-title__underline" id="skills_underline-stretched"></div>
+                </div>
+                <div class="skills__list-container">
+                    <ul class="skills__list right-container__list list">
+                        <li class="skills__element list__element">HTML</li>
+                        <li class="skills__element list__element">CSS</li>
+                        <li class="skills__element list__element">JavaScript (basics)</li>
+                        <li class="skills__element list__element">Git</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="code-example right-section" id="code-example" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+                <div class="code-example__title section-title">
+                    <h2 class="section-title__text" >Code Example</h2>
+                    <div class="section-title__underline" id="code-example_underline-stretched"></div>
+                </div>
+                <div class="code-example__content" id="code-example__content" onmouseover="changeCodeBackground();" onmouseout="rechangeCodeBackground();">
+        <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em 0.5em 3em 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">function</span> <span class="hljs-title" style="font-weight: 700;">maxRedigit</span>(<span class="hljs-params">num</span>)</span>{
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (num &lt; <span class="hljs-number" style="color: rgb(255, 205, 34);">100</span> || num &gt; <span class="hljs-number" style="color: rgb(255, 205, 34);">999</span>) {
+              <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> <span class="hljs-literal" style="color: rgb(147, 199, 99); font-weight: 700;">null</span>;
+              } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> {
+                <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> str = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">String</span>(num);
+                <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> maxNumber = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.max(str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>]);
+                <span class="hljs-keyword" style="color: #93c763; font-weight: 700;">let</span> minNumber = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.min(str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>], str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>]);
+                <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] &lt; maxNumber &amp;&amp; str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] &gt; minNumber) {
+                  <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> +(maxNumber + str[<span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>] + minNumber);
+                } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>] &lt; maxNumber &amp;&amp; str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>] &gt; minNumber) {
+                  <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> +(maxNumber + str[<span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>] + minNumber);
+                } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> {<span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> +(maxNumber + str[<span class="hljs-number" style="color: rgb(255, 205, 34);">2</span>] + minNumber)
+              }         
+            }
+          }</pre>
+        <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em 0.5em 3em 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">function</span> <span class="hljs-title" style="font-weight: 700;">sc</span>(<span class="hljs-params">screws</span>)</span>{
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> result = <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>;
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">for</span> (<span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> i = <span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>; i &lt; screws.length; i++){
+              <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (screws[i] === screws[i - <span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>]) {
+                result += <span class="hljs-number" style="color: rgb(255, 205, 34);">1</span>; 
+              } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> {
+                result += <span class="hljs-number" style="color: rgb(255, 205, 34);">6</span>;
+              };
+            }
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> result + screws.length;
+          }</pre>
+        <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">function</span> <span class="hljs-title" style="font-weight: 700;">remainder</span>(<span class="hljs-params">a, b</span>)</span>{
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> aPos = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.abs(a);
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">let</span> bPos = <span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.abs(b);
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (aPos === <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span> || bPos === <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>) {
+              <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> <span class="hljs-literal" style="color: rgb(147, 199, 99); font-weight: 700;">NaN</span>;
+            } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">if</span> (a &gt; +b) {
+              <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> aPos - (<span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.floor(aPos / bPos) * bPos);
+            } <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">else</span> {
+            <span class="hljs-keyword" style="color: rgb(147, 199, 99); font-weight: 700;">return</span> bPos - (<span class="hljs-built_in" style="color: rgb(140, 187, 173);">Math</span>.floor(bPos / aPos) * aPos);  
+            }
+          }</pre>  
+                </div>
+            </section>
+    
+            <section class="education right-section" id="education" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+                <div class="education__title section-title">
+                    <h2 class="section-title__text">Education</h2>
+                    <div class="section-title__underline" id="education_underline-stretched"></div>
+                </div>
+                <div class="education__list-container">
+                    <ul class="education__list right-container__list list">
+                        <li class="education__element list__element">Hexlet</li>
+                        <li class="education__element list__element">Learn.JavaScript</li>
+                        <li class="education__element list__element">rsschool</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="progects right-section" id="progects" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+
+                <div class="progects__title section-title">
+                    <h2 class="section-title__text">Progects</h2>
+                    <div class="section-title__underline" id="progects_underline-stretched"></div>
+                </div>
+
+                <div class="progects__first-progect-container progect-container">
+                    <p class="progects__read-more" id="progects__read-more">Progect one</p>
+                    <div class="progects__content">
+                        <a class="progects__link link" href="https://pavlkan.github.io/museum/index.html">Museum</a>
+                    </div>
+                </div>
+
+                <div class="progects__first-progect-container progect-container">
+                    <p class="progects__read-more">Progect two</p>
+                    <div class="progects__content">
+                        <img src="./img/progect.png" alt="second-progect" width="800">
+                    </div>
+                </div>
+
+            </section>
+    
+            <section class="languages right-section" id="languages" onmouseover="changeUnderlineWidth(this);" onmouseout="rechangeUnderlineWidth(this);">
+                <div class="languages__title section-title">
+                    <h2 class="section-title__text">Languages</h2>
+                    <div class="section-title__underline" id="languages_underline-stretched"></div>
+                </div>
+                <div class="languages__list-container">
+                    <ul class="languages__list list">
+                        <li class="list__element">English: Upper-intermediate/Advanced, experience in speaking with native and advanced speakers, reading books in the original and constantly improving my knowledge.</li>
+                        <li class="list__element">Russian: native speaker.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__logo-container">
+            <div class="rs-school-logo">
+                <a class="rs-school-logo__link" href="https://rs.school/js/">
+                    <img class="footer__logo" src="./img/rs_school_js.svg" alt="rs-school-logo" height="200">
+                </a>
+            </div>
+            <div class="github-logo">
+                <a class="github-logo__link" href="https://github.com/Pavlkan">
+                    <img class="footer__logo" src="./img/github_logo.png" alt="github-logo" height="200">
+                </a>
+            </div>
+        </div>
+        <div class="footer__date-container">
+            <h3>Pavel Karman 2022</h3>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
