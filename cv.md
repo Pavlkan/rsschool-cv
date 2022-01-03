@@ -13,7 +13,7 @@
 * Git
 ## **Code Example**
 ```javascript  
-var maxRedigit = function(num) {
+function maxRedigit(num){
   if (num < 100 || num > 999) {
     return null;
     } else {
@@ -27,7 +27,7 @@ var maxRedigit = function(num) {
       } else {return +(maxNumber + str[2] + minNumber)
     }         
   }
-};
+}
 ```
 ```javascript  
 function sc(screws){
