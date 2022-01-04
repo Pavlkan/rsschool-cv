@@ -145,25 +145,25 @@ main {
     font-weight: bold;
 }
 
-.progects__read-more {
+.projects__read-more {
     margin-bottom: 20px;
 
     cursor: pointer;
     font-weight: bold;
 }
 
-.progects__read-more:hover {
+.projects__read-more:hover {
     color: #0d5a2e;
     font-weight: bold;
 }
 
-.progect-container div {
+.project-container div {
     margin-bottom: 80px;
 
     display:none;
 }
 
-.progects__link {
+.projects__link {
     text-decoration: underline;
     font-weight: normal;
 }
