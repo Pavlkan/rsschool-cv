@@ -6,6 +6,8 @@
 html {
     margin: 0 auto;
     background-color: #ffffff;
+
+    scroll-behavior: smooth;
 }
 
 body {
