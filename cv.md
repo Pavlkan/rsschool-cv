@@ -19,7 +19,7 @@ I am 24 years old and work as a pharmacist. One of the aspects of working in hos
 -   JavaScript (basics)
 -   Git
 
-## **Code Example**
+## **Code Examples**
 
 ```javascript
 function maxRedigit(num) {
